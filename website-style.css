@@ -1,0 +1,85 @@
+h1 {
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  font-size: 4.5em;
+  color: #24282d;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  color: #b1b2b3;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#box-container {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+#box-1 {
+  margin-right: 20px;
+}
+
+#box-2 {
+  margin-right: 20px;
+}
+
+#box-3 {
+  margin-right: 20px;
+}
+
+.home-page-body {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.header {
+  font-family: "Karla", sans-serif;
+  font-size: 1.5em;
+}
+
+#text-box {
+  margin: 16px;
+  max-width: 400px;
+  text-align: justify;
+  font-size: 0.99em;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.facts {
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1em;
+  color: #24282d;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.name-link {
+  text-decoration: none;
+  color: #e63946;
+}
+
+.name-link:hover {
+  text-decoration: underline;
+}
