@@ -17,6 +17,16 @@ h2 {
   margin-bottom: 30px;
 }
 
+.header-link {
+  text-decoration: none;
+  color: #24282d;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+  color: #e63946;
+}
+
 #box-container {
   font-family: "Karla", sans-serif;
   display: flex;
@@ -35,16 +45,6 @@ h2 {
 
 #box-3 {
   margin-right: 20px;
-}
-
-.header-link {
-  text-decoration: none;
-  color: #24282d;
-}
-
-.header-link:hover {
-  text-decoration: underline;
-  color: #e63946;
 }
 
 #box-container2 {
@@ -71,6 +71,7 @@ h2 {
 
 img {
   width: 500px;
+  border-radius: 1em;
 }
 
 form {
