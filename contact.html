@@ -54,7 +54,7 @@
         <form method="post">
           <ul>
             <li>
-              <label for="name">Name</label>
+              <label for="name">Name:</label>
               <input
                 type="text"
                 id="name"
@@ -63,7 +63,7 @@
               />
             </li>
             <li>
-              <label for="mail">Email</label>
+              <label for="mail">Email:</label>
               <input
                 type="email"
                 id="mail"
@@ -72,19 +72,81 @@
               />
             </li>
             <li>
-              <label for="msg">Message</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li class="button">
-              <button type="reset">Clear</button>
-              <button type="submit">Submit</button>
+              <label for="msg">Message:</label>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Enter your message"
+              ></textarea>
             </li>
           </ul>
+          <div class="buttons">
+            <button type="reset" class="clear-button">CLEAR</button>
+            <button type="submit" class="submit-button">SUBMIT</button>
+          </div>
         </form>
       </div>
       <div id="box-6">
         <img src="cookie-the-pom.jpg" />
       </div>
     </div>
+    <br />
+    <br />
+    <p class="footer">
+      <em>
+        This page was coded by
+        <a
+          href="https://www.linkedin.com/in/ellieruthkemp/"
+          target="_blank"
+          class="name-link"
+          >Ellie Kemp👈</a
+        >
+      </em>
+    </p>
+
+    <script>
+      function sendValues() {
+        const newName = document.getElementById("name").value;
+        const newEmail = document.getElementById("mail").value;
+        const newMessage = document.getElementById("msg").value;
+
+        if (newName == "") {
+          alert("Please add your name!");
+          return false;
+        }
+        if (newEmail == "") {
+          alert("Please add your email!");
+          return false;
+        }
+        if (newMessage == "") {
+          alert("Please add a message!");
+          return false;
+        }
+        if (newName != "" || newEmail != "" || newMessage != "") {
+          alert(
+            "Name = " +
+              newName +
+              ", " +
+              "Email = " +
+              newEmail +
+              ", " +
+              "Message = " +
+              newMessage
+          );
+        }
+      }
+      let submitButton = document.querySelector(".submit-button");
+      submitButton.addEventListener("click", sendValues);
+
+      function reset() {
+        if (confirm("Please press OK to erase your form.")) {
+          alert("Form sucessfully erased!");
+          return false;
+        }
+      }
+
+      let resetButton = document.querySelector(".clear-button");
+      resetButton.addEventListener("click", reset);
+    </script>
   </body>
 </html>

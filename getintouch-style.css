@@ -99,6 +99,7 @@ label {
   display: inline-block;
   width: 90px;
   text-align: right;
+  padding-right: 10px;
 }
 
 input,
@@ -130,14 +131,33 @@ textarea {
   height: 5em;
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
+.buttons {
+  text-align: center;
+  margin-top: 20px;
 }
 
 button {
   /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-  margin-left: 0.5em;
+  font-size: 1em;
+  margin-right: 10px;
   font-family: "Karla", sans-serif;
+}
+
+.footer {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1em;
+  color: #24282d;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.name-link {
+  text-decoration: none;
+  color: #e63946;
+}
+
+.name-link:hover {
+  text-decoration: underline;
 }
