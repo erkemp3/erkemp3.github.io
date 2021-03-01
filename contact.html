@@ -122,7 +122,7 @@
           alert("Please add a message!");
           return false;
         }
-        if (newName != "" || newEmail != "" || newMessage != "") {
+        if (newName != "" && newEmail != "" && newMessage != "") {
           alert(
             "Name = " +
               newName +
@@ -140,7 +140,7 @@
 
       function reset() {
         if (confirm("Please press OK to erase your form.")) {
-          alert("Form sucessfully erased!");
+          alert("Form erased");
           return false;
         }
       }
